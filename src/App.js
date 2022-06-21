@@ -1,6 +1,6 @@
 import './App.css';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -17,7 +17,7 @@ const  App =()=> {
 
     return (
       <div>
-        <HashRouter>
+        <BrowserRouter>
           <Navbar/>
           <LoadingBar
             height={3}
@@ -34,7 +34,7 @@ const  App =()=> {
             <Route exact path='/sports' element= { <News setProgress={setProgress} apiKey={apiKey} key="sports" pageSize={pageSize} country="in" category="sports"/> }/>
             <Route exact path='/technology' element= { <News setProgress={setProgress} apiKey={apiKey} key="technology" pageSize={pageSize} country="in" category="technology"/> }/>
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
 
       </div>
     )
