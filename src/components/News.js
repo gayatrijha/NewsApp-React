@@ -34,7 +34,6 @@ const News =(props)=>{
     useEffect(()=>{
         document.title=`${capitalize(props.category)} - NewsApp`;
         upadateNews();
-        //eslint-disabled-next-line
     },[]);
     // handlePrev=async ()=>{
         // let  url=`https://newsapi.org/v2/top-headlines?&country=${props.country}&category=${props.category}&apiKey=75cc2b1685b540898a5ad1532fa6d771&page=${this.state.page - 1}&pageSize=${props.pageSize}`;
