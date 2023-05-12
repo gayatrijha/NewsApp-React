@@ -9,7 +9,7 @@ const  NewsItem =(props)=> {
             <span className=" badge rounded-pill bg-danger">
             {source}</span>
           </div>
-            <img src={imageurl? imageurl :'https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9_992.jpg'} className="card-img-top" alt="..."/>
+            <img src={imageurl ? imageurl :'https://s.abcnews.com/images/US/abc_news_default_2000x2000_update_16x9_992.jpg'} className="card-img-top" alt="..."/>
             <div className="card-body">
                 <h5 className="card-title">{title}  </h5>
                 <p className="card-text">{description}</p>
